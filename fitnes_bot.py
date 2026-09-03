@@ -28,7 +28,8 @@ except ValueError:
 bmi = weight / (height ** 2)
 bmi = round(bmi, 1)
          # расчёт количества воды рекомендованного к потреблению в сутки
-water_l = weight * WATER_PER_KG/1000
+water_ml = weight * WATER_PER_KG
+water_l = water_ml / 1000
 water_l = round(water_l, 1)
 
                             # Сводный блок расчетов
