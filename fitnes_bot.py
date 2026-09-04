@@ -9,7 +9,7 @@ name = name.title()              #Команда для написания Им�
 print(name, "приятно познакомиться! ")
 age = input ("Сколько вам лет? ")
 age = int(age)
-        # конструкция на случай если пользователь введет данные с ',', а не с '.'
+ # конструкция на случай если пользователь введет данные с ',', а не с '.'
 try: 
     height = input("Пожалуйста, укажите свой Рост в Метрах: ")
     height = float(height)
@@ -21,17 +21,13 @@ except ValueError:
     height = float(height)
     weight = input("А теперь вес в Килограммах: ")
     weight = float(weight)
-
-
-
-                # расчёт индекса массы тела
+             # расчёт индекса массы тела
 bmi = weight / (height ** 2)
 bmi = round(bmi, 1)
          # расчёт количества воды рекомендованного к потреблению в сутки
 water_ml = weight * WATER_PER_KG
 water_l = water_ml / 1000
 water_l = round(water_l, 1)
-
                             # Сводный блок расчетов
 print("-"*41)
 print(f"|Отчет для пользователя: {name} ({age} г.)  |")
